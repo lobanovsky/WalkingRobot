@@ -1,8 +1,6 @@
 package com.company;
 
-/**
- * Created by evgeny on 11/08/14.
- */
+
 public class Robot {
 
     private boolean ready;
