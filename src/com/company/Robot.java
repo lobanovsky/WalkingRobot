@@ -8,7 +8,7 @@ public class Robot {
 
     public synchronized void doLeft() throws InterruptedException {
         while (!ready) wait();
-        System.out.println("do left");
+        System.out.println("Do left");
         ready = false;
         notifyAll();
     }
@@ -16,7 +16,7 @@ public class Robot {
 
     public synchronized void doRight() throws InterruptedException {
         while (ready) wait();
-        System.out.println("do right");
+        System.out.println("Do right");
         ready = true;
         notifyAll();
     }
